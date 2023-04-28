@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Todo{% endblock %}
+
+{% block body %}
+
+<h1>Edit Todo</h1>
+<form action="{{ url_for('edit', id=todo.id) }}" method="POST">
+    <label for="todo">Task:</label>
+    <input type="text" name="todo" id="todo" value="{{ todo.task }}" class="form-control">
+
+    <label for="due_date">Due date:</label>
+    <input type="date" name="due_date" id="due_date" value="{{ todo.due_date.strftime('%Y-%m-%d') }}"
+        class="form-control">
+
+    <button type="submit" class="btn btn-primary mt-3">Save Todo</button>
+</form>
+{% endblock %}

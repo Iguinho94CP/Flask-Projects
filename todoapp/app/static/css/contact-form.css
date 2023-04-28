@@ -1,0 +1,33 @@
+/* Center the form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Style the form inputs */
+  .form-control {
+    margin-bottom: 1rem;
+    border-radius: 0;
+  }
+  
+  /* Style the form labels */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Style the form submit button */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .btn-primary:focus {
+    box-shadow: none;
+  }
+  
